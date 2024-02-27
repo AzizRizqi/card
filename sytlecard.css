@@ -1,0 +1,82 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+body{
+    background: url(bgcard.jpg);
+    background-size: cover;
+    background-position: center;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;    
+    
+}
+.card{
+    position: relative;
+    width: 500px;
+    height: 300px;
+    background: rgba(255, 255, 255, 0.1);
+    backdrop-filter: blur(10px);
+    box-shadow: 0 25px 25px rgba(172, 123, 123, 0.1);
+    border-radius: 500px;
+    overflow: hidden;
+    border-top: 1px solid rgba(233, 125, 125, 0.5);
+    transition: 1s;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+}
+.card:hover{
+    transform: scale(2,2);
+    background: rgb(90, 85, 85);
+}
+.card::before{
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 70px;
+    background: gray;
+}
+
+.card .content{
+    position: relative;
+    display: flex;
+    margin-top: -80px;
+    
+}
+
+.card .content .imgbox{
+    position: relative;
+    width: 100px;
+    height: 100px;
+    overflow: hidden;
+    border-radius: 50%;
+    box-shadow: 0 0 0 10px;
+    row-gap: 10px;
+}
+
+.card .content .imgbox img{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.card .content .detail h1{
+    font-weight: bold;
+    color: black;
+    text-transform: 1.4cm;
+}
+.card .content .detail h1{
+    font-weight: bold;
+    color: black;
+    text-transform: 1.4cm;
+}
